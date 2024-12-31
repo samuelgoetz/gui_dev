@@ -46,50 +46,50 @@ public class GalleryFragment extends Fragment {
         // (z. B. das oberste LinearLayout oder ConstraintLayout im fragment_gallery.xml).
         View root = binding.getRoot();
 
-        current = imageViews[0];
-        imageViews = new ImageView[3];
-        imageViews[0] = binding.cell1;
-        imageViews[1] = binding.cell2;
-        imageViews[2] = binding.cell3;
+//        current = imageViews[0];
+//        imageViews = new ImageView[3];
+//        imageViews[0] = binding.cell1;
+//        imageViews[1] = binding.cell2;
+//        imageViews[2] = binding.cell3;
+//
+//        //Drawables mit Hintergund laden
+//        empty = getResources().getDrawable(R.drawable.empty,null);
+//        drawables = new Drawable[3];
+//        drawables[0] = getResources().getDrawable(R.drawable.color1,null);
+//        drawables[1] = getResources().getDrawable(R.drawable.color2,null);
+//        drawables[2] = getResources().getDrawable(R.drawable.color3,null);
 
-        //Drawables mit Hintergund laden
-        empty = getResources().getDrawable(R.drawable.empty,null);
-        drawables = new Drawable[3];
-        drawables[0] = getResources().getDrawable(R.drawable.color1,null);
-        drawables[1] = getResources().getDrawable(R.drawable.color2,null);
-        drawables[2] = getResources().getDrawable(R.drawable.color3,null);
-
-
-        // Beobachter fuer Feldnr. im ViewModel
-        galleryViewModel.getFieldNo().observe(getViewLifecycleOwner(), new Observer<Integer>() {
-            // Wird aufgerufen, sobald Wert von fieldNo sich aendert
-            @Override
-            public void onChanged(Integer integer) {
-                int fieldNo = integer;
-                current = imageViews[fieldNo];
-            }
-        });
-
-        galleryViewModel.getImgNo().observe(getViewLifecycleOwner(),new Observer<Integer>(){
-            // Wird aufgerufen, sobald Wert von fieldNo sich aendert
-            @Override
-            public void onChanged(Integer integer) {
-                int imgNo = integer;
-                Drawable d = drawables[imgNo];
-                current.setImageDrawable(d);
-            }
-        });
-
-        //Next Button:
-        binding.next.setOnClickListener(v->{
-
-            // Felder werden wieder weiß gemacht
-            for (ImageView view : imageViews) {
-                view.setImageDrawable(empty);
-            }
-            galleryViewModel.diceFieldNo();
-            galleryViewModel.diceImgNo();
-        });
+//
+//        // Beobachter fuer Feldnr. im ViewModel
+//        galleryViewModel.getFieldNo().observe(getViewLifecycleOwner(), new Observer<Integer>() {
+//            // Wird aufgerufen, sobald Wert von fieldNo sich aendert
+//            @Override
+//            public void onChanged(Integer integer) {
+//                int fieldNo = integer;
+//                current = imageViews[fieldNo];
+//            }
+//        });
+//
+//        galleryViewModel.getImgNo().observe(getViewLifecycleOwner(),new Observer<Integer>(){
+//            // Wird aufgerufen, sobald Wert von fieldNo sich aendert
+//            @Override
+//            public void onChanged(Integer integer) {
+//                int imgNo = integer;
+//                Drawable d = drawables[imgNo];
+//                current.setImageDrawable(d);
+//            }
+//        });
+//
+//        //Next Button:
+//        binding.next.setOnClickListener(v->{
+//
+//            // Felder werden wieder weiß gemacht
+//            for (ImageView view : imageViews) {
+//                view.setImageDrawable(empty);
+//            }
+//            galleryViewModel.diceFieldNo();
+//            galleryViewModel.diceImgNo();
+//        });
 
         //final TextView textView = binding.textGallery;
         //galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);

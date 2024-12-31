@@ -5,48 +5,191 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.gallery.GalleryFragment">
-    <ImageView
-        android:id="@+id/cell3"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:src="@drawable/empty"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/innerLayout"
+        android:layout_width="299dp"
+        android:layout_height="400dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/next"
-        app:layout_constraintStart_toEndOf="@id/cell2"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
-    <ImageView
-        android:id="@+id/cell2"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:src="@drawable/empty"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/next"
-        app:layout_constraintStart_toEndOf="@id/cell1"
-        app:layout_constraintEnd_toStartOf="@id/cell3"
-        />
-    <ImageView
-        android:id="@+id/cell1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:src="@drawable/empty"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/next"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/cell2"
-        />
-    <Button
-        android:id="@+id/next"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:text="Next!"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp">
+
+    <!--        das-->
+        <ImageView
+            android:id="@+id/field0"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_circle_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/field1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ludo_gamer_green"
+            app:layout_constraintStart_toEndOf="@+id/field0"
+            app:layout_constraintTop_toTopOf="@+id/field0" />
+
+
+        <ImageView
+            android:id="@+id/field2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ludo_gamer_red"
+            app:layout_constraintStart_toEndOf="@+id/field1"
+            app:layout_constraintTop_toTopOf="@+id/field0" />
+
+
+        <ImageView
+            android:id="@+id/field3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ludo_gamers_red_green"
+            app:layout_constraintStart_toEndOf="@+id/field2"
+            app:layout_constraintTop_toTopOf="@+id/field0" />
+
+        <ImageView
+            android:id="@+id/field4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:background="@color/blue1"
+            app:layout_constraintStart_toEndOf="@+id/field3"
+            app:layout_constraintTop_toTopOf="@+id/field0" />
+
+
+        <ImageView
+            android:id="@+id/field5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+
+            android:background="@color/blue1"
+            app:layout_constraintStart_toStartOf="@+id/field0"
+            app:layout_constraintTop_toBottomOf="@+id/field0" />
+
+
+        <ImageView
+            android:id="@+id/field6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/blue1"
+            app:layout_constraintStart_toStartOf="@+id/field5"
+            app:layout_constraintTop_toBottomOf="@+id/field5" />
+
+
+        <ImageView
+            android:id="@+id/field7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/blue1"
+            app:layout_constraintStart_toStartOf="@+id/field6"
+            app:layout_constraintTop_toBottomOf="@+id/field6" />
+
+        <ImageView
+            android:id="@+id/field8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/blue1"
+            app:layout_constraintStart_toStartOf="@+id/field7"
+            app:layout_constraintTop_toBottomOf="@+id/field7" />
+
+        <ImageView
+            android:id="@+id/field9"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/blue1"
+            app:layout_constraintStart_toStartOf="@+id/field4"
+            app:layout_constraintTop_toBottomOf="@+id/field4"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/field10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/blue1"
+            app:layout_constraintStart_toStartOf="@+id/field9"
+            app:layout_constraintTop_toBottomOf="@+id/field9" />
+
+
+        <ImageView
+            android:id="@+id/field11"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/blue1"
+            app:layout_constraintStart_toStartOf="@+id/field10"
+            app:layout_constraintTop_toBottomOf="@+id/field10" />
+
+        <ImageView
+            android:id="@+id/field12"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/blue1"
+            app:layout_constraintStart_toStartOf="@+id/field11"
+            app:layout_constraintTop_toBottomOf="@+id/field11" />
+
+        <ImageView
+            android:id="@+id/fieldSquare"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="68dp"
+            android:background="@color/blue1"
+            app:layout_constraintStart_toStartOf="@+id/field5"
+            app:layout_constraintTop_toBottomOf="@+id/field5"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imgPawns"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ludo_gamers"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--android:src="@drawable/ic_dice_orange"-->
+
+    <ImageView
+        android:id="@+id/diceGrey"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="104dp"
+        android:background="@color/blue1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/diceOrange" />
+
+    <ImageView
+        android:id="@+id/diceOrange"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="104dp"
+        android:src="@drawable/w_rfel_1_black__1_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
