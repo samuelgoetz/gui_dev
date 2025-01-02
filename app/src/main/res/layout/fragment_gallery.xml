@@ -174,9 +174,9 @@
         android:id="@+id/diceGrey"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="104dp"
-        android:background="@color/blue1"
+        android:background="@drawable/w_rfel_6_black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/diceOrange" />
 
@@ -186,7 +186,7 @@
         android:layout_height="130dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="104dp"
-        android:src="@drawable/w_rfel_1_black__1_"
+        android:src="@drawable/w_rfel_1_black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
