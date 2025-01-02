@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.gallery.GalleryFragment">
+    tools:context=".ui.gallery.GameFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/innerLayout"
@@ -32,7 +32,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="12dp"
-            android:src="@drawable/ludo_gamer_green"
+            android:src="@drawable/ic_circle_black"
             app:layout_constraintStart_toEndOf="@+id/field0"
             app:layout_constraintTop_toTopOf="@+id/field0" />
 
@@ -42,7 +42,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="12dp"
-            android:src="@drawable/ludo_gamer_red"
+            android:src="@drawable/ic_circle_black"
             app:layout_constraintStart_toEndOf="@+id/field1"
             app:layout_constraintTop_toTopOf="@+id/field0" />
 
@@ -52,7 +52,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="12dp"
-            android:src="@drawable/ludo_gamers_red_green"
+            android:src="@drawable/ic_circle_black"
             app:layout_constraintStart_toEndOf="@+id/field2"
             app:layout_constraintTop_toTopOf="@+id/field0" />
 
@@ -61,7 +61,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="12dp"
-            android:background="@color/blue1"
+            android:src="@drawable/ic_circle_black"
             app:layout_constraintStart_toEndOf="@+id/field3"
             app:layout_constraintTop_toTopOf="@+id/field0" />
 
@@ -72,7 +72,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="12dp"
 
-            android:background="@color/blue1"
+            android:src="@drawable/ic_circle_black"
             app:layout_constraintStart_toStartOf="@+id/field0"
             app:layout_constraintTop_toBottomOf="@+id/field0" />
 
@@ -82,7 +82,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="12dp"
-            android:background="@color/blue1"
+            android:src="@drawable/ic_circle_black"
             app:layout_constraintStart_toStartOf="@+id/field5"
             app:layout_constraintTop_toBottomOf="@+id/field5" />
 
@@ -92,7 +92,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="12dp"
-            android:background="@color/blue1"
+            android:src="@drawable/ic_circle_black"
             app:layout_constraintStart_toStartOf="@+id/field6"
             app:layout_constraintTop_toBottomOf="@+id/field6" />
 
@@ -101,7 +101,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="12dp"
-            android:background="@color/blue1"
+            android:src="@drawable/ic_circle_black"
             app:layout_constraintStart_toStartOf="@+id/field7"
             app:layout_constraintTop_toBottomOf="@+id/field7" />
 
@@ -110,7 +110,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="12dp"
-            android:background="@color/blue1"
+            android:src="@drawable/ic_circle_black"
             app:layout_constraintStart_toStartOf="@+id/field4"
             app:layout_constraintTop_toBottomOf="@+id/field4"
             tools:ignore="HardcodedText" />
@@ -120,7 +120,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="12dp"
-            android:background="@color/blue1"
+            android:src="@drawable/ic_circle_black"
             app:layout_constraintStart_toStartOf="@+id/field9"
             app:layout_constraintTop_toBottomOf="@+id/field9" />
 
@@ -130,7 +130,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="12dp"
-            android:background="@color/blue1"
+            android:src="@drawable/ic_circle_black"
             app:layout_constraintStart_toStartOf="@+id/field10"
             app:layout_constraintTop_toBottomOf="@+id/field10" />
 
@@ -139,19 +139,9 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="12dp"
-            android:background="@color/blue1"
+            android:src="@drawable/ic_circle_black"
             app:layout_constraintStart_toStartOf="@+id/field11"
             app:layout_constraintTop_toBottomOf="@+id/field11" />
-
-        <ImageView
-            android:id="@+id/fieldSquare"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="68dp"
-            android:background="@color/blue1"
-            app:layout_constraintStart_toStartOf="@+id/field5"
-            app:layout_constraintTop_toBottomOf="@+id/field5"
-            tools:ignore="HardcodedText" />
 
         <ImageView
             android:id="@+id/imgPawns"
@@ -171,22 +161,22 @@
     <!--android:src="@drawable/ic_dice_orange"-->
 
     <ImageView
-        android:id="@+id/diceGrey"
+        android:id="@+id/diceRed"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="104dp"
-        android:background="@drawable/w_rfel_6_black"
+        android:background="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/diceOrange" />
+        app:layout_constraintEnd_toStartOf="@+id/diceGreen" />
 
     <ImageView
-        android:id="@+id/diceOrange"
+        android:id="@+id/diceGreen"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="104dp"
-        android:src="@drawable/w_rfel_1_black"
+        android:src="@color/red"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
